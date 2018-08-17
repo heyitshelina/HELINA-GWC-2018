@@ -1,0 +1,117 @@
+*  {
+  font-family: Helvetica;
+  color: black;
+}
+html {
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;      
+}
+body {
+  background-color: white;
+  font: normal 13px arial,sans-serif;
+  height: 100%;
+  margin: 0;
+}
+#map {
+  background: #ccc;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+#searchContainer {
+  border-radius:2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: rgba(247,247,247,0.5);
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 3px #C5C5C5;
+  -moz-box-shadow: 0 0 3px #C5C5C5;
+  -webkit-box-shadow: 0 0 3px #C5C5C5;
+  height:158px;
+  width:250px;
+  position:absolute;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+  padding: 4px 4px 4px 4px;
+}
+#searchBox {
+  background-color: rgba(247,247,247,0.7);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  border: 1px solid #ffffff;
+  height:136px;
+  width:250px;
+  text-align: center;
+  line-height: 44px;
+}
+#resultContainer {
+  border-radius:2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: rgba(247,247,247,0.5);
+  border: 1px solid #ffffff;
+  -moz-box-shadow: 0 0 3px #C5C5C5;
+  -webkit-box-shadow: 0 0 3px #C5C5C5;
+  box-shadow: 0 0 3px #C5C5C5;
+  width:252px;
+  position:absolute;
+  z-index: 2;
+  top: 208px;
+  right: 20px;
+  padding: 4px 4px 4px 4px;
+  display: none;
+}
+#resultHeader, #searchHeader {
+  width:250px;  
+  height:20px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-left: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  position: relative;
+  background-repeat: repeat-x; 
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C2DCFD), to(#DDECFD));
+  background: -webkit-linear-gradient(top, #DDECFD, #C2DCFD);
+  background: -moz-linear-gradient(top, #DDECFD, #C2DCFD);
+  background: -ms-linear-gradient(top, #DDECFD, #C2DCFD);
+  background: -o-linear-gradient(top, #DDECFD, #C2DCFD);
+  text-align: center;  
+  font-size:16px;
+  text-shadow: 0px 0px 1px #96B0BB;
+}
+#resultBox {
+  background-color: rgba(247,247,247,0.7);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  border: 1px solid #ffffff;
+  max-height:418px;
+  min-height:250px;
+  width:250px;    
+  overflow: auto;      
+}
+.item0,.item1 {
+  float:left;
+  padding: 5px 4px 5px 4px;
+  width:242px;
+  border-top: 1px solid #dcdcdc;
+}
+.item1 {      
+  background-color: #FFFFFF;
+}    
+.clear {
+  clear:both;
+}      
+.olPopupCloseBox { 
+  background: url("../img/close.gif") no-repeat;  
+  cursor: pointer; 
+}
+.olFramedCloudPopupContent { 
+  padding: 5px;
+  overflow: auto; 
+}
